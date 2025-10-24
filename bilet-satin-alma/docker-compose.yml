@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    container_name: bilet_platformu_web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./app:/var/www/html
